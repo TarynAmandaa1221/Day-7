@@ -13,6 +13,7 @@
 		8B48C2582302F0DD007F6F21 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B48C2562302F0DD007F6F21 /* LaunchScreen.storyboard */; };
 		8B48C2632302F0DD007F6F21 /* viewFinderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B48C2622302F0DD007F6F21 /* viewFinderTests.swift */; };
 		8B48C26E2302F0DD007F6F21 /* viewFinderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B48C26D2302F0DD007F6F21 /* viewFinderUITests.swift */; };
+		8B48C27E2302FED7007F6F21 /* AddPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B48C27D2302FED7007F6F21 /* AddPhotoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,7 @@
 		8B48C2692302F0DD007F6F21 /* viewFinderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = viewFinderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B48C26D2302F0DD007F6F21 /* viewFinderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = viewFinderUITests.swift; sourceTree = "<group>"; };
 		8B48C26F2302F0DD007F6F21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8B48C27D2302FED7007F6F21 /* AddPhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPhotoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +77,7 @@
 		8B48C2412302F0DB007F6F21 = {
 			isa = PBXGroup;
 			children = (
+				8B48C27D2302FED7007F6F21 /* AddPhotoViewController.swift */,
 				8B48C24C2302F0DB007F6F21 /* viewFinder */,
 				8B48C2612302F0DD007F6F21 /* viewFinderTests */,
 				8B48C26C2302F0DD007F6F21 /* viewFinderUITests */,
@@ -254,6 +257,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8B48C24E2302F0DB007F6F21 /* AppDelegate.swift in Sources */,
+				8B48C27E2302FED7007F6F21 /* AddPhotoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
