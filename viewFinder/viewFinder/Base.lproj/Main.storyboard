@@ -63,11 +63,13 @@
                                     <action selector="takeSelfieTapped:" destination="KNB-74-vti" eventType="touchUpInside" id="Yrb-jR-Njx"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Camera2" translatesAutoresizingMaskIntoConstraints="NO" id="3bt-3M-APU">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Camera2" translatesAutoresizingMaskIntoConstraints="NO" id="3bt-3M-APU">
                                 <rect key="frame" x="91" y="149" width="232" height="189"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Caption" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dbc-H1-eGI">
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Caption" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dbc-H1-eGI">
                                 <rect key="frame" x="165" y="346" width="84" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -89,18 +91,12 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="dbc-H1-eGI" firstAttribute="top" secondItem="3bt-3M-APU" secondAttribute="bottom" constant="8" id="ApN-uI-GP2"/>
-                            <constraint firstItem="3bt-3M-APU" firstAttribute="leading" secondItem="EW3-De-vZQ" secondAttribute="leading" constant="91" id="Na0-mp-opm"/>
-                            <constraint firstItem="EW3-De-vZQ" firstAttribute="trailing" secondItem="dbc-H1-eGI" secondAttribute="trailing" constant="165" id="WK0-NZ-1aH"/>
-                            <constraint firstItem="EW3-De-vZQ" firstAttribute="trailing" secondItem="3bt-3M-APU" secondAttribute="trailing" constant="91" id="ZDz-CR-IeZ"/>
-                            <constraint firstItem="dbc-H1-eGI" firstAttribute="top" secondItem="3bt-3M-APU" secondAttribute="bottom" constant="8" id="k4O-PJ-UK1"/>
-                            <constraint firstItem="3bt-3M-APU" firstAttribute="top" secondItem="EW3-De-vZQ" secondAttribute="top" constant="61" id="l2F-lf-L0m"/>
-                            <constraint firstItem="dbc-H1-eGI" firstAttribute="leading" secondItem="EW3-De-vZQ" secondAttribute="leading" constant="165" id="xLd-2p-z1q"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="EW3-De-vZQ"/>
                     </view>
                     <navigationItem key="navigationItem" title="ADD new photo" id="v6n-d9-orr"/>
+                    <connections>
+                        <outlet property="displayImage" destination="3bt-3M-APU" id="dQf-Ge-J1p"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zcj-Fr-HL0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
